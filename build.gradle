@@ -83,6 +83,7 @@ subprojects {
 
     dependencies {
         compile "org.springframework.boot:spring-boot-devtools"
+        compile group: "org.springframework", name: "spring-context-support"
         compileOnly "org.springframework.boot:spring-boot-configuration-processor"
         compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: rootProject.ext.springBootVersion
         compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'

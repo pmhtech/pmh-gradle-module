@@ -1,2 +1,2 @@
 rootProject.name = 'pmh-gradle-module'
-include ':dao-mybatis:monitor',':core',':endpoint-server:monitor',':monitor-service:afreeca'
+include ':dao-mybatis',':dao-mybatis-monitor',':core',':endpoint-server',':endpoint-server-monitor',':service-monitor'

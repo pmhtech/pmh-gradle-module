@@ -1,0 +1,10 @@
+bootJar.enabled=false
+jar.enabled=true
+
+dependencies {
+
+    compile project(':endpoint-server')
+    compile("org.springframework.boot:spring-boot-starter-undertow")
+    compile group: 'org.quartz-scheduler', name: 'quartz', version: '2.3.1'
+
+}
