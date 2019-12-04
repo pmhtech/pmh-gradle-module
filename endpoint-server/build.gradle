@@ -1,0 +1,12 @@
+bootJar.enabled=false
+jar.enabled=true
+
+
+dependencies {
+    compile group : 'org.springframework.boot' ,name: 'spring-boot-starter-web' ,version : rootProject.ext.springBootVersion
+    runtime group : 'ch.qos.logback', name : 'logback-classic', version : '1.1.11'
+
+    compile group: 'io.springfox', name : 'springfox-swagger2' ,version : rootProject.ext.swaggerVersion
+    compile group: 'io.springfox', name : 'springfox-swagger-ui' ,version : rootProject.ext.swaggerVersion
+
+}

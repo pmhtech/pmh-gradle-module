@@ -1,0 +1,8 @@
+bootJar.enabled=true
+jar.enabled=true
+
+dependencies {
+
+    compile("org.springframework.boot:spring-boot-starter-undertow")
+    compile project(':endpoint-server')
+}

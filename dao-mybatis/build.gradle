@@ -1,0 +1,11 @@
+bootJar.enabled=false
+jar.enabled=true
+
+dependencies {
+	compile group: 'org.mybatis', name: 'mybatis', version: '3.4.6'
+	compile group: 'org.mybatis', name: 'mybatis-spring', version: '1.3.2'
+	compile files('libs/log4sql-7.8.jar')
+	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.47'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version : rootProject.ext.springBootVersion
+	compile 'org.apache.commons:commons-dbcp2:2.1.1'
+}
