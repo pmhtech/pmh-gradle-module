@@ -1,0 +1,7 @@
+bootJar.enabled=false
+jar.enabled=true
+
+dependencies {
+    compile project(':core')
+    compile project(':dao-mybatis-monitor')
+}
