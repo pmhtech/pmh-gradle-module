@@ -1,4 +1,4 @@
-package net.pmhtech.config;
+package net.pmhtech.boot;
 
 import org.quartz.spi.TriggerFiredBundle;
 import org.springframework.beans.BeansException;

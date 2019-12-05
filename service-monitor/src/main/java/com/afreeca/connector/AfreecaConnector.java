@@ -76,7 +76,7 @@ public class AfreecaConnector implements AbstractConnector {
 
 
     @Override
-    public List<?> getData(String key) {
+    public List<LogMaster> getData(String key) {
 
 
         URL url = this.getURL(key);
@@ -109,19 +109,17 @@ public class AfreecaConnector implements AbstractConnector {
 
 
             Afreeca[] realBroads = afreecaResultSet.getREAL_BROAD();
-            SimpleDateFormat formatter = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
             Calendar cal = Calendar.getInstance();
-            String logTime = formatter.format(cal.getTime());
             for(int i=0;i<realBroads.length;i++){
 
                 Afreeca temp = realBroads[i];
-                String platformType ="1";
+                Integer platformType =1;
                 String platformUserId=temp.getUser_id();
                 String title=temp.getBroad_title();
                 String snapshotPath =temp.getSn_url();
-                String viewCount=temp.getTotal_view_cnt();
+                Integer viewCount= Integer.parseInt(temp.getTotal_view_cnt());
 
-                LogMaster logMaster = new LogMaster(logTime,platformType,platformUserId,title,snapshotPath,viewCount);
+                LogMaster logMaster = new LogMaster(platformType,platformUserId,title,snapshotPath,viewCount);
 
                 returnList.add(logMaster);
             }

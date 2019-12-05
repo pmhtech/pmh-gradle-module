@@ -1,6 +1,7 @@
 package net.pmhtech.config;
 
 
+import net.pmhtech.boot.ApplicationContextHolder;
 import org.quartz.spi.JobFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -14,6 +15,7 @@ import org.springframework.scheduling.quartz.SchedulerFactoryBean;
  */
 @Configuration
 public class QuartzConfig {
+
     @Autowired
     private ApplicationContext applicationContext;
 

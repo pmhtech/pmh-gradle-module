@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(
 	scanBasePackages = {
-		"config.farota.*",
-		"com.farota.*",
-		"kr.co.directsend.*"
+		"net.pmhtech.config",
+		"net.pmhtech.*",
+		"com.afreeca.*"
 			
 	}
 )

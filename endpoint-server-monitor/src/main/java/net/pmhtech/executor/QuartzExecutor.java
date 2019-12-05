@@ -1,5 +1,7 @@
 package net.pmhtech.executor;
 
+import net.pmhtech.monitor.service.MonitorService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,8 +11,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class QuartzExecutor {
 
-    public void execute(){
+    @Autowired
+    private MonitorService monitorService;
 
+    public void execute(){
+        monitorService.doLogging();
 
     }
 }

@@ -13,15 +13,15 @@ import javax.sql.DataSource;
 
 @Configuration
 @MapperScan(basePackages = {
-		"com.farota.log.dao.mybatis"
+		"net.pmhtech.monitor.dao.mybatis"
 }, annotationClass = MonitorMapper.class, sqlSessionFactoryRef = "monitorSqlSessionFactory")
 public class MonitorMyBatisMapperConfig extends MyBatisMapperConfig {
 	
 	
 	@Bean
-	public SqlSessionFactory logSqlSessionFactory(@Qualifier("monitorMyBatisDataSource") DataSource logMyBatisDataSource) throws Exception {
+	public SqlSessionFactory monitorSqlSessionFactory(@Qualifier("monitorMyBatisDataSource") DataSource monitorMyBatisDataSource) throws Exception {
 		SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
-		this.configureSqlSessionFactory(sessionFactoryBean, logMyBatisDataSource);
+		this.configureSqlSessionFactory(sessionFactoryBean, monitorMyBatisDataSource);
 		return sessionFactoryBean.getObject();
 	}
 }
