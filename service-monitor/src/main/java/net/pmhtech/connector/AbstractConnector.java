@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface AbstractConnector {
 
-    List<?> getData();
+    List<?> getData(String key);
 }

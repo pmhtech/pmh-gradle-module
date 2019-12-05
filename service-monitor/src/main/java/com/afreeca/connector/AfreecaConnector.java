@@ -6,6 +6,7 @@ import com.google.gson.Gson;
 import net.pmhtech.connector.AbstractConnector;
 import net.pmhtech.monitor.domain.LogMaster;
 import net.pmhtech.util.JsonUtil;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,6 +25,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.List;
 
+@Service
 public class AfreecaConnector implements AbstractConnector {
 
     public URL getURL(String keyword) {
@@ -74,10 +76,10 @@ public class AfreecaConnector implements AbstractConnector {
 
 
     @Override
-    public List<?> getData() {
+    public List<?> getData(String key) {
 
-        String keyword="";
-        URL url = this.getURL(keyword);
+
+        URL url = this.getURL(key);
         BufferedReader rd  = null;
         HttpURLConnection conn =null;
         StringBuilder sb = new StringBuilder();
