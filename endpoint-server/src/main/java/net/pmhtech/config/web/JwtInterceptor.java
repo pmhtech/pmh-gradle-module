@@ -1,8 +1,6 @@
 package net.pmhtech.config.web;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -17,11 +15,6 @@ public class JwtInterceptor implements HandlerInterceptor{
 	//@Autowired
 	//private JwtCrypt jwtCrypt;
 
-	@Value("${spring.farota.thing-server-host}")
-	private String thingServerHost;
-
-	@Value("${spring.farota.quartz-server-host}")
-	private String thingQuartzHost;
 
 	private String getClientIpAddr(HttpServletRequest request){
 

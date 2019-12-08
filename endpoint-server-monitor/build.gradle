@@ -2,11 +2,8 @@ bootJar.enabled=true
 jar.enabled=true
 
 dependencies {
-
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-quartz'
-    compile project(':endpoint-server')
     compile project(':service-monitor')
-    compile("org.springframework.boot:spring-boot-starter-undertow")
+
 
 
 }

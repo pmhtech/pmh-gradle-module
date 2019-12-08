@@ -6,7 +6,7 @@
 	<appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<prudent>true</prudent>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>/Users/pmhmac/log/net.pmhtech.moniter/net.pmhtech.moniter.%d{yyyyMMdd}.log</fileNamePattern>
+			<fileNamePattern>log/net.pmhtech.moniter.%d{yyyyMMdd}.log</fileNamePattern>
 			<maxHistory>14</maxHistory>
 		</rollingPolicy>
 		<encoder>
