@@ -2,6 +2,6 @@
 package net.pmhtech.mybatis.mapper;
 
 
-public @interface FarotaMyBatisMapper {
+public @interface MonitorMapper {
 
 }

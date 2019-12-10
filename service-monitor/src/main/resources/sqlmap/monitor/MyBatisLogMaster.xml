@@ -16,7 +16,7 @@
             #{platformType}
             ,#{platformUserId}
             ,#{title}
-            ,#{snapshot_path}
+            ,#{snapshotPath}
             ,#{viewCount}
             ,#{createUserId}
             ,now()

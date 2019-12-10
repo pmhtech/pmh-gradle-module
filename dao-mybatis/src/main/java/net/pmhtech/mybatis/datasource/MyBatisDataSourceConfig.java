@@ -18,16 +18,16 @@ public abstract class MyBatisDataSourceConfig {
 	        dataSource.setUsername(dbProperties.getUserName());
 	        dataSource.setPassword(dbProperties.getPassword());
 	        
-	        dataSource.setMaxTotal(dbProperties.getMaxTotal());
-	        dataSource.setMaxIdle(dbProperties.getMaxIdle());
-	        dataSource.setMinIdle(dbProperties.getMinIdle());
-	        dataSource.setInitialSize(dbProperties.getMinIdle());
+	        //dataSource.setMaxTotal(dbProperties.getMaxTotal());
+	        //dataSource.setMaxIdle(dbProperties.getMaxIdle());
+	        //dataSource.setMinIdle(dbProperties.getMinIdle());
+	        //dataSource.setInitialSize(dbProperties.getMinIdle());
 	    	
 	        dataSource.setTestOnBorrow(dbProperties.isTestOnBorrow());
-	    	dataSource.setTestOnReturn(dbProperties.isTestOnReturn());
+	    	//dataSource.setTestOnReturn(dbProperties.isTestOnReturn());
 	    	
-	    	dataSource.setTimeBetweenEvictionRunsMillis(dbProperties.getTimeBetweenEvictionRunsMillis());
+	    	//dataSource.setTimeBetweenEvictionRunsMillis(dbProperties.getTimeBetweenEvictionRunsMillis());
 	    	dataSource.setValidationQuery(dbProperties.getValidationQuery());
-	    	dataSource.setTestWhileIdle(dbProperties.isTestWhileIdle());
+	    	//dataSource.setTestWhileIdle(dbProperties.isTestWhileIdle());
 	    }
 	}
